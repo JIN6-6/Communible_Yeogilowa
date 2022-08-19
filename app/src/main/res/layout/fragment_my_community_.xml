@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".community.my_community_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#F0F0F2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/like"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginStart="24dp"
+                android:fontFamily="@font/notosanskr_bold"
+                android:text="나의 활동"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qq"
+                android:layout_marginTop="18dp"/>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <ImageView
+                    android:id="@+id/like1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/combar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.506"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="20dp"/>
+
+                <ImageView
+                    android:id="@+id/like2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/combar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/like1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="내가 쓴 글"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/like1"
+                    app:layout_constraintEnd_toEndOf="@+id/like1"
+                    app:layout_constraintStart_toStartOf="@+id/like1"
+                    app:layout_constraintTop_toTopOf="@+id/like1"
+                    android:layout_marginRight="200dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="스크랩"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/like2"
+                    app:layout_constraintEnd_toEndOf="@+id/like2"
+                    app:layout_constraintStart_toStartOf="@+id/like2"
+                    app:layout_constraintTop_toBottomOf="@+id/like1"
+                    android:layout_marginRight="220dp"
+                    android:layout_marginBottom="10dp"/>
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</FrameLayout>
